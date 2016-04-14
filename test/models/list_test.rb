@@ -13,4 +13,9 @@ class ListTest < ActiveSupport::TestCase
  	assert_includes @list.tasks, tasks(:one)
     
    end
+   test 'delete tasks when list is deleted' do
+   	@list.destroy
+   	assert_empty Task.where(list_id: @list.id)
+   end
+   
 end
