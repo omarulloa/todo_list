@@ -4,8 +4,9 @@ one:
   title: MyString
   note: MyText
   completed: false
-
+  list: list_one 
 two:
   title: MyString
   note: MyText
   completed: false
+  list: list_one
